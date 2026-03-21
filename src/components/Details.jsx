@@ -81,7 +81,7 @@ function Details() {
                                 background: 'linear-gradient(135deg, rgba(121, 163, 125, 0.1) 0%, transparent 100%)',
                                 border: '1px solid rgba(121, 163, 125, 0.3)'
                             }}>
-                                <CelebrationIcon sx={{ fontSize: 40, color: "var(--secondary-color)" }} />
+                                <CelebrationIcon sx={{ fontSize: 40, color: "var(--tertiary-color)" }} />
                             </Box>
                             <Typography variant="h3" sx={{ fontFamily: "'Playfair Display', serif", color: "var(--primary-color)", mb: 2, fontSize: "2rem", fontWeight: 700 }}>
                                 Reception
@@ -91,7 +91,7 @@ function Details() {
                             </Typography>
                             <Box sx={{ width: '30px', height: '2px', bgcolor: 'var(--primary-color)', opacity: 0.2, mx: 'auto', my: 2 }} />
                             <Typography sx={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.9rem", color: "#666", mb: 3, textTransform: "uppercase", letterSpacing: 2 }}>
-                                6:30 PM Onwards
+                                6:00 PM Onwards
                             </Typography>
                             <Typography sx={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", color: "var(--text-color)", fontStyle: "italic", lineHeight: 1.6 }}>
                                 Join us for an evening of warmth, laughter, and a delightful feast as we celebrate our new beginning together with family and friends.
@@ -128,13 +128,13 @@ function Details() {
                         }}>
                             <Box sx={{ 
                                 width: '80px', height: '80px', 
-                                margin: '0 auto 20px', 
+                                margin: '0 auto 10px', 
                                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                                 borderRadius: '50%',
                                 background: 'linear-gradient(135deg, rgba(121, 163, 125, 0.1) 0%, transparent 100%)',
                                 border: '1px solid rgba(121, 163, 125, 0.3)'
                             }}>
-                                <FavoriteIcon sx={{ fontSize: 40, color: "var(--secondary-color)" }} />
+                                <FavoriteIcon sx={{ fontSize: 40, color: "var(--tertiary-color)" }} />
                             </Box>
                             <Typography variant="h3" sx={{ fontFamily: "'Playfair Display', serif", color: "var(--primary-color)", mb: 2, fontSize: "2rem", fontWeight: 700 }}>
                                 Muhurtham
@@ -144,7 +144,7 @@ function Details() {
                             </Typography>
                             <Box sx={{ width: '30px', height: '2px', bgcolor: 'var(--primary-color)', opacity: 0.2, mx: 'auto', my: 2 }} />
                             <Typography sx={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.9rem", color: "#666", mb: 3, textTransform: "uppercase", letterSpacing: 2 }}>
-                                6:00 AM - 7:30 AM
+                                4:30 AM - 6:00 AM
                             </Typography>
                             <Typography sx={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", color: "var(--text-color)", fontStyle: "italic", lineHeight: 1.6 }}>
                                 The sacred moment where two hearts become one. We seek your blessings 

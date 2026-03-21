@@ -78,7 +78,7 @@ function Venue() {
                                     href="https://maps.app.goo.gl/t3dbT3jUjnT5owVKA" 
                                     target="_blank"
                                     sx={{ 
-                                        backgroundColor: "#285A48",
+                                        backgroundColor: "#241d40",
                                         color: "#fff", 
                                         fontFamily: "'Montserrat', sans-serif",
                                         fontWeight: 600,
@@ -87,7 +87,7 @@ function Venue() {
                                         letterSpacing: 1,
                                         textTransform: "uppercase",
                                         fontSize: "0.8rem",
-                                        "&:hover": { backgroundColor: "#519A66" }
+                                        "&:hover": { backgroundColor: "#615099" }
                                     }}
                                 >
                                     Get Directions

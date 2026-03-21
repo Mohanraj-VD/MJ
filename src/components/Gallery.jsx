@@ -12,17 +12,17 @@ function Gallery() {
             description: "\"From two different paths, we now walk one journey.\n" +
                 "With love as our guide and trust as our strength,\n" +
                 "this is just the beginning of forever\"",
-            icon: <FavoriteIcon sx={{ fontSize: 40, color: "var(--secondary-color)" }} />
+            icon: <FavoriteIcon sx={{ fontSize: 40, color: "var(--tertiary-color)" }} />
         },
         {
             title: "The Sacred Tie",
             description: "\"It is not just a knot, but a bond of three knots representing duty, love, and respect, binding two souls in eternal union.\"",
-            icon: <AllInclusiveIcon sx={{ fontSize: 40, color: "var(--secondary-color)" }} />
+            icon: <AllInclusiveIcon sx={{ fontSize: 40, color: "var(--tertiary-color)" }} />
         },
         {
             title: "The Promise",
             description: "\"Holding hands, we promise to walk side by side, through all of life's seasons, sharing laughter, tears, and a lifetime of dreams.\"",
-            icon: <VolunteerActivismIcon sx={{ fontSize: 40, color: "var(--secondary-color)" }} />
+            icon: <VolunteerActivismIcon sx={{ fontSize: 40, color: "var(--tertiary-color)" }} />
         }
     ];
 

@@ -1,12 +1,21 @@
 :root {
   /* Premium Studio Palette - Updated to Pista Green */
-  --primary-color: #2c4a3b; /* Deep Green */
-  --secondary-color: #79a37d; /* Pista Green/Sage */
-  --accent-color: #d1e2d4; /* Light Pista/Mint */
-  --text-color: #1a2e24; /* Very Dark Green/Almost Black */
-  --bg-color: #f0f7f2; /* Off-white with a hint of green */
-  --card-bg: rgba(255, 255, 255, 0.9);
+  /* --primary-color: #2c4a3b; Deep Green */
+  /* --secondary-color: #79a37d; Pista Green/Sage */
+  /* --accent-color: #d1e2d4; Light Pista/Mint */
+  /* --text-color: #1a2e24; Very Dark Green/Almost Black */
+  /* --bg-color: #f0f7f2; Off-white with a hint of green */
+  /* --card-bg: rgba(255, 255, 255, 0.9); */
 
+   /* Premium Studio Palette - Updated to Pista Green */
+  --primary-color: #3a2864; /* Deep Green */
+  --secondary-color: #6f6ca0; /* Pista Green/Sage */
+  --accent-color: #b5add8; /* Light Pista/Mint */
+  --text-color: #3d2d53; /* Very Dark Green/Almost Black */
+  /* --bg-color: #d8e0e9; Off-white with a hint of green */
+  --card-bg: rgba(118, 140, 176, 0.9);
+  --bg-color : radial-gradient(circle, #fdfbfb, #ebedee);
+  --tertiary-color: rgba(255, 0, 0, 0.542);
   /* Fonts */
   --font-heading: 'Cormorant Garamond', serif;
   --font-subheading: 'Playfair Display', serif;
@@ -56,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  padding: 80px 20px;
+  padding: 20px 20px;
   position: relative;
 }
 
@@ -111,10 +120,10 @@ section {
   font-weight: 600;
   margin-bottom: 40px;
   display: inline-block;
-  padding: 10px 10px;
-  border: 1px solid rgba(155, 163, 125, 0.4);
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 5px;
+  border: 1px ridge rgba(73, 97, 125, 0.4);
+  border-radius: 50px;
+  background: radial-gradient(circle at center, transparent 0%, rgba(240, 247, 242, 0) 60%, rgba(121, 163, 125, 0.15) 100%);
   backdrop-filter: blur(5px);
   position: relative;
 }
@@ -190,8 +199,8 @@ section {
   color: var(--text-color);
   margin-bottom: 50px;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
   line-height: 1.8;
   font-style: italic;
   opacity: 0.9;
