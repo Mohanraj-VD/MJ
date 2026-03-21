@@ -54,8 +54,8 @@ function Footer() {
             <Box sx={{ 
                 position: 'relative', 
                 zIndex: 2, 
-                maxWidth: '1200px', 
-                margin: '0 auto', 
+                // maxWidth: '1200px',
+                margin: '10 10',
                 display: 'flex', 
                 flexDirection: 'column', 
                 alignItems: 'center',

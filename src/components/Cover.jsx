@@ -142,7 +142,8 @@ function Cover({ onOpen }) {
                 overflow: "hidden"
             }}
         >
-            <Box sx={{ opacity: 0.3 }}>
+            {/* We've already set the hearts to be red in index.css, so FloatingOrbs renders them */}
+            <Box sx={{ opacity: 0.5 }}>
                 <FloatingOrbs />
             </Box>
 
@@ -168,7 +169,7 @@ function Cover({ onOpen }) {
                     background: "rgba(255, 255, 255, 0.6)",
                     backdropFilter: "blur(15px)",
                     WebkitBackdropFilter: "blur(15px)",
-                    padding: "60px 40px",
+                    padding: "40px 40px",
                     borderRadius: "20px",
                     border: "1px solid rgba(255, 255, 255, 0.8)",
                     boxShadow: "0 20px 40px rgba(44, 74, 59, 0.08)",
@@ -251,7 +252,7 @@ function Cover({ onOpen }) {
                             fontFamily: "'Montserrat', sans-serif",
                             fontWeight: 600,
                             borderRadius: "4px", 
-                            padding: "12px 40px",
+                            padding: "12px 12px",
                             letterSpacing: 3,
                             textTransform: "uppercase",
                             fontSize: "0.8rem",

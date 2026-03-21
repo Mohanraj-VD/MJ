@@ -70,24 +70,24 @@ function Venue() {
                                 loading="lazy"
                             ></iframe>
                         </Box>
-                        <Box sx={{ textAlign: "center", p: 4 }}>
-                            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                        <Box sx={{ textAlign: "center", p: 4, boxSizing: "border-box"  }}>
+                            <motion.div whileHover={{ scale: 1.0 }} whileTap={{ scale: 0.95 }}>
                                 <Button 
                                     variant="contained" 
                                     startIcon={<LocationOnIcon />}
                                     href="https://maps.app.goo.gl/t3dbT3jUjnT5owVKA" 
                                     target="_blank"
                                     sx={{ 
-                                        backgroundColor: "var(--primary-color)", 
+                                        backgroundColor: "#285A48",
                                         color: "#fff", 
                                         fontFamily: "'Montserrat', sans-serif",
                                         fontWeight: 600,
-                                        borderRadius: "4px",
-                                        padding: "12px 30px",
+                                        borderRadius: "50px",
+                                        padding: "10px 10px",
                                         letterSpacing: 1,
                                         textTransform: "uppercase",
                                         fontSize: "0.8rem",
-                                        "&:hover": { backgroundColor: "var(--secondary-color)" }
+                                        "&:hover": { backgroundColor: "#519A66" }
                                     }}
                                 >
                                     Get Directions

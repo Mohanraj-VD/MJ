@@ -4,8 +4,26 @@ import AnimatedText from "./AnimatedText";
 
 function Hero() {
     return (
-        <section className="hero" style={{ paddingTop: "120px" }}>
-            <div className="hero-content">
+        <Box component="section" className="hero" sx={{ 
+            pt: { xs: 12, md: 15 }, 
+            pb: { xs: 6, md: 8 },
+            px: { xs: 0, sm: 2, md: 4 }, // Removed padding left and right completely on smallest screens
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            minHeight: "90vh",
+            width: "100%",
+            boxSizing: "border-box"
+        }}>
+            <Box className="hero-content" sx={{ 
+                width: "100%", 
+                maxWidth: "1000px", 
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center"
+            }}>
                 <motion.div
                     className="invitation-tag"
                     initial={{ opacity: 0, y: -20 }}
@@ -20,56 +38,89 @@ function Hero() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1.2, delay: 0.3 }}
+                    style={{ width: "100%", margin: "0 auto 40px" }}
                 >
-                    <div className="name-wrapper" style={{ gap: "30px" }}>
+                    <Box sx={{ 
+                        display: 'flex', 
+                        flexDirection: 'column', 
+                        alignItems: 'center', 
+                        gap: { xs: 3, md: 4 },
+                        width: '100%' 
+                    }}>
                         {/* Groom Section */}
-                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
                             <div className="name-line">
-                                <span className="name-decoration"></span>
-                                <h1 className="hero-title" style={{ fontSize: "4rem" }}>
+                                <span className="name-decoration" style={{ display: 'none' }}></span>
+                                <Typography variant="h1" className="hero-title" sx={{ 
+                                    fontSize: { xs: "3.2rem", sm: "4.5rem", md: "5.5rem" },
+                                    fontFamily: "var(--font-script)",
+                                    color: "var(--primary-color)",
+                                    m: 0,
+                                    lineHeight: 1.2,
+                                    px: 0, // removed padding
+                                    wordBreak: 'break-word',
+                                    whiteSpace: 'normal'
+                                }}>
                                     <AnimatedText text="V. Mohanraj" />
-                                </h1>
-                                <span className="name-decoration"></span>
+                                </Typography>
+                                <span className="name-decoration" style={{ display: 'none' }}></span>
                             </div>
                             <Typography variant="body2" sx={{ 
                                 fontFamily: "'Montserrat', sans-serif", 
                                 color: "var(--text-color)", 
-                                mt: 1,
-                                letterSpacing: 1,
-                                fontSize: "0.9rem",
+                                mt: { xs: 1, md: 2 },
+                                letterSpacing: { xs: 0.5, sm: 2 },
+                                fontSize: { xs: "0.75rem", sm: "0.9rem" },
                                 fontStyle: "italic",
-                                opacity: 0.8
+                                opacity: 0.8,
+                                textAlign: 'center',
+                                maxWidth: '100%',
+                                px: 1,
+                                mx: "auto"
                             }}>
                                 Son of Mr. S. Vellingiri & Mrs. V. Dhanabagiyam
                             </Typography>
                         </Box>
                         
-                        <div className="ampersand-container" style={{ margin: "10px 0" }}>
-                            <span className="ampersand" style={{ fontSize: "3.5rem" }}>&</span>
+                        <div className="ampersand-container" style={{ margin: "5px 0" }}>
+                            <span className="ampersand" style={{ fontSize: "3rem" }}>&</span>
                         </div>
                         
                         {/* Bride Section */}
-                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
                             <div className="name-line">
-                                <span className="name-decoration"></span>
-                                <h1 className="hero-title" style={{ fontSize: "4rem" }}>
+                                <span className="name-decoration" style={{ display: 'none' }}></span>
+                                <Typography variant="h1" className="hero-title" sx={{ 
+                                    fontSize: { xs: "3.2rem", sm: "4.5rem", md: "5.5rem" },
+                                    fontFamily: "var(--font-script)",
+                                    color: "var(--primary-color)",
+                                    m: 0,
+                                    lineHeight: 1.2,
+                                    px: 0, // removed padding
+                                    wordBreak: 'break-word',
+                                    whiteSpace: 'normal'
+                                }}>
                                     <AnimatedText text="T. Janaki Priya" />
-                                </h1>
-                                <span className="name-decoration"></span>
+                                </Typography>
+                                <span className="name-decoration" style={{ display: 'none' }}></span>
                             </div>
                             <Typography variant="body2" sx={{ 
                                 fontFamily: "'Montserrat', sans-serif", 
                                 color: "var(--text-color)", 
-                                mt: 1,
-                                letterSpacing: 1,
-                                fontSize: "0.9rem",
+                                mt: { xs: 1, md: 2 },
+                                letterSpacing: { xs: 0.5, sm: 2 },
+                                fontSize: { xs: "0.75rem", sm: "0.9rem" },
                                 fontStyle: "italic",
-                                opacity: 0.8
+                                opacity: 0.8,
+                                textAlign: 'center',
+                                maxWidth: '100%',
+                                px: 1,
+                                mx: "auto"
                             }}>
                                 Daughter of Mr. Thiruselvam & Mrs. T. Subbulakshmi
                             </Typography>
                         </Box>
-                    </div>
+                    </Box>
                 </motion.div>
 
                 <motion.div
@@ -77,9 +128,24 @@ function Hero() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.2 }}
-                    style={{ marginTop: "40px" }}
+                    style={{ 
+                        marginTop: "20px", 
+                        marginBottom: "40px",
+                        padding: "10 10px",
+                        width: "100%",
+                        boxSizing: "border-box"
+                    }}
                 >
-                    We invite you to share in our joy as we begin our new life together.
+                    <Typography sx={{
+                        fontFamily: "var(--font-heading)",
+                        fontSize: { xs: "1.2rem", sm: "1.5rem" },
+                        fontStyle: "italic",
+                        lineHeight: 1.6,
+                        maxWidth: "600px",
+                        mx: "auto"
+                    }}>
+                        We invite you to share in our joy as we begin our new life together.
+                    </Typography>
                 </motion.div>
 
                 <motion.div
@@ -93,8 +159,8 @@ function Hero() {
                         <div className="date-location">Tiruppur</div>
                     </div>
                 </motion.div>
-            </div>
-        </section>
+            </Box>
+        </Box>
     );
 }
 

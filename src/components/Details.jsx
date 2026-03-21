@@ -64,7 +64,7 @@ function Details() {
                             backdropFilter: "blur(10px)",
                             border: "1px solid rgba(121, 163, 125, 0.2)",
                             borderRadius: "16px",
-                            padding: "40px 30px",
+                            padding: "40px 40px",
                             textAlign: "center",
                             transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
                             "&:hover": {
@@ -117,7 +117,7 @@ function Details() {
                             backdropFilter: "blur(10px)",
                             border: "1px solid rgba(121, 163, 125, 0.2)",
                             borderRadius: "16px",
-                            padding: "40px 30px",
+                            padding: "40px 40px",
                             textAlign: "center",
                             transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
                             "&:hover": {
