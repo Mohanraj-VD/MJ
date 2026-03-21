@@ -181,16 +181,17 @@ function Cover({ onOpen }) {
                 <Box sx={{ width: '40px', height: '2px', bgcolor: 'var(--secondary-color)', mx: 'auto', mb: 4 }} />
 
                 <motion.div
-                    animate={{ 
-                        scale: [1, 1.05, 1],
-                        opacity: [0.8, 1, 0.8]
-                    }}
-                    transition={{ 
-                        duration: 3, 
-                        repeat: Infinity, 
-                        ease: "easeInOut" 
-                    }}
-                >
+                //     animate={{
+                //         scale: [1, 1.05, 1],
+                //         opacity: [0.8, 1, 0.8]
+                //     }}
+                //     transition={{
+                //         duration: 3,
+                //         repeat: Infinity,
+                //         ease: "easeInOut"
+                //     }}
+                // >
+                    >
                     <Typography variant="subtitle1" sx={{ 
                         fontFamily: "'Montserrat', sans-serif", 
                         color: "var(--secondary-color)", 
@@ -257,12 +258,12 @@ function Cover({ onOpen }) {
                             textTransform: "uppercase",
                             fontSize: "0.8rem",
                             transition: "all 0.3s ease",
-                            background: "rgba(255, 255, 255, 0.4)",
+                            background: "var(--bg-color)",
                             backdropFilter: "blur(5px)",
                             borderWidth: "1px",
                             "&:hover": { 
-                                borderColor: "var(--primary-color)", 
-                                backgroundColor: "rgba(255, 255, 255, 0.8)",
+                                borderColor: "var(--primary-color)",
+                                backgroundColor: "#EBF4DD",
                                 transform: "translateY(-2px)",
                                 boxShadow: "0 10px 20px rgba(44, 74, 59, 0.15)"
                             }
