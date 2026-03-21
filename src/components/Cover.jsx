@@ -205,7 +205,7 @@ function Cover({ onOpen }) {
                 </motion.div>
 
                 <Typography variant="h1" sx={{ 
-                    fontFamily: "'Cormorant Garamond', serif", // Professional serif font instead of script
+                    fontFamily: "'Great Vibes', cursive", // Professional serif font instead of script
                     color: "var(--primary-color)", 
                     fontSize: { xs: "3rem", md: "4.5rem" }, 
                     fontWeight: 600,
@@ -220,9 +220,9 @@ function Cover({ onOpen }) {
                     <span style={{ 
                         fontFamily: "'Great Vibes', cursive", 
                         fontSize: '0.8em', 
-                        color: 'var(--secondary-color)',
+                        color: 'var(--tertiary-color)',
                         margin: '10px 0'
-                    }}>and</span>
+                    }}>with</span>
                     <span>T. Janaki Priya</span>
                 </Typography>
 

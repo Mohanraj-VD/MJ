@@ -52,7 +52,7 @@ function Hero() {
                             <div className="name-line">
                                 <span className="name-decoration" style={{ display: 'none' }}></span>
                                 <Typography variant="h1" className="hero-title" sx={{ 
-                                    fontSize: { xs: "3.2rem", sm: "4.5rem", md: "5.5rem" },
+                                    fontSize: { xs: "3.8rem", sm: "4.5rem", md: "5.5rem" },
                                     fontFamily: "var(--font-script)",
                                     color: "var(--primary-color)",
                                     m: 0,
@@ -70,9 +70,9 @@ function Hero() {
                                 color: "var(--text-color)", 
                                 mt: { xs: 1, md: 2 },
                                 letterSpacing: { xs: 0.5, sm: 2 },
-                                fontSize: { xs: "0.75rem", sm: "0.9rem" },
+                                fontSize: { xs: "0.9rem", sm: "1rem" },
                                 fontStyle: "italic",
-                                opacity: 0.8,
+                                opacity: 0.9,
                                 textAlign: 'center',
                                 maxWidth: '100%',
                                 px: 1,
