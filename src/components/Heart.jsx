@@ -6,7 +6,7 @@ const Heart = () => (
         transition={{
             duration: 0.3,
             repeat: Infinity,
-            repeatDelay: 1,
+            repeatDelay: 2,
         }}
         style={{ display: "inline-block" }}
     >

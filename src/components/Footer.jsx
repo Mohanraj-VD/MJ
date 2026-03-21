@@ -70,16 +70,16 @@ function Footer() {
                 >
                     <Typography variant="h3" sx={{ 
                         fontFamily: "'Pinyon Script', cursive", 
-                        fontSize: { xs: "3rem", md: "4.5rem" }, 
+                        fontSize: { xs: "2rem", md: "4rem" },
                         color: "var(--primary-color)",
                         mb: 2,
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        flexWrap: "wrap",
-                        gap: "10px"
+                        // flexWrap: "wrap",
+                        gap: "5px"
                     }}>
-                        <span>V. Mohanraj</span> <Heart /> <span>T. Janaki Priya</span>
+                        <span>V. Mohanraj</span> <Heart/><span>T. Janaki Priya</span>
                     </Typography>
 
                     <Typography variant="body1" sx={{ 
