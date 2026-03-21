@@ -257,14 +257,14 @@ function Cover({ onOpen }) {
                             letterSpacing: 3,
                             textTransform: "uppercase",
                             fontSize: "0.8rem",
-                            transition: "all 0.3s ease",
+                            transition: "all 0s ease",
                             background: "var(--bg-color)",
                             backdropFilter: "blur(5px)",
                             borderWidth: "1px",
                             "&:hover": { 
                                 borderColor: "var(--primary-color)",
                                 backgroundColor: "#EBF4DD",
-                                transform: "translateY(-2px)",
+                                transform: "translateY(-1px)",
                                 boxShadow: "0 10px 20px rgba(44, 74, 59, 0.15)"
                             }
                         }}
@@ -274,7 +274,7 @@ function Cover({ onOpen }) {
                 </motion.div>
                 
                 {/* Thin elegant bottom border */}
-                <Box sx={{ width: '40px', height: '2px', bgcolor: 'var(--secondary-color)', mx: 'auto', mt: 6 }} />
+                <Box sx={{ width: '40px', height: '2px', bgcolor: 'var(--secondary-color)', mx: 'auto', mt: 3 }} />
             </motion.div>
         </motion.div>
     );
