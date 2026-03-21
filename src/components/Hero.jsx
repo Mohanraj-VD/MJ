@@ -117,7 +117,7 @@ function Hero() {
                                 px: 1,
                                 mx: "auto"
                             }}>
-                                Daughter of Mr. Thiruselvam & Mrs. T. Subbulakshmi
+                                Daughter of Mr. G. Thiruselvam & Mrs. T. Subbulakshmi
                             </Typography>
                         </Box>
                     </Box>
