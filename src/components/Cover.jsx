@@ -195,10 +195,10 @@ function Cover({ onOpen }) {
                     <Typography variant="subtitle1" sx={{ 
                         fontFamily: "'Montserrat', sans-serif", 
                         color: "var(--secondary-color)", 
-                        letterSpacing: 8, 
-                        fontWeight: 600,
+                        letterSpacing: 8,
+                        fontWeight: 800,
                         display: 'block',
-                        mb: 4 
+                        mb: 8
                     }}>
                         Wedding Invitation
                     </Typography>

@@ -6,15 +6,18 @@ import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
 
 function Gallery() {
     const meanings = [
+
+        {
+            title: "Our Journey Begins",
+            description: "\"From two different paths, we now walk one journey.\n" +
+                "With love as our guide and trust as our strength,\n" +
+                "this is just the beginning of forever\"",
+            icon: <FavoriteIcon sx={{ fontSize: 40, color: "var(--secondary-color)" }} />
+        },
         {
             title: "The Sacred Tie",
             description: "\"It is not just a knot, but a bond of three knots representing duty, love, and respect, binding two souls in eternal union.\"",
             icon: <AllInclusiveIcon sx={{ fontSize: 40, color: "var(--secondary-color)" }} />
-        },
-        {
-            title: "The Seven Steps",
-            description: "\"Seven steps we take together, seven promises we make forever. With each step, we vow to be each other's strength and companion.\"",
-            icon: <FavoriteIcon sx={{ fontSize: 40, color: "var(--secondary-color)" }} />
         },
         {
             title: "The Promise",
