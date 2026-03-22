@@ -93,7 +93,7 @@ function Details() {
                             <Typography sx={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.9rem", color: "#666", mb: 3, textTransform: "uppercase", letterSpacing: 2 }}>
                                 6:00 PM Onwards
                             </Typography>
-                            <Typography sx={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", color: "var(--text-color)", fontStyle: "italic", lineHeight: 1.6 }}>
+                            <Typography sx={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", color: "var(--text-color)", fontStyle: "italic", lineHeight: 1.6 }}>
                                 Join us for an evening of warmth, laughter, and a delightful feast as we celebrate our new beginning together with family and friends.
                             </Typography>
                         </Box>
@@ -151,7 +151,7 @@ function Details() {
                             <Typography sx={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.9rem", color: "#666", mb: 3, textTransform: "uppercase", letterSpacing: 2 }}>
                                 4:30 AM - 6:00 AM
                             </Typography>
-                            <Typography sx={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", color: "var(--text-color)", fontStyle: "italic", lineHeight: 1.6 }}>
+                            <Typography sx={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", color: "var(--text-color)", fontStyle: "italic", lineHeight: 1.6 }}>
                                 The sacred moment where two hearts become one. We seek your blessings 
                                 and love as we take our vows in the presence of the divine.
                             </Typography>

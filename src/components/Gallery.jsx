@@ -51,7 +51,7 @@ function Gallery() {
                     letterSpacing: 3,
                     textTransform: "uppercase",
                     fontWeight: 600,
-                    fontSize: { xs: "0.7rem", md: "0.9rem" }
+                    fontSize: { xs: "1rem", md: "1.1rem" }
                 }}>
                     Rituals & Meanings
                 </Typography>
@@ -100,7 +100,7 @@ function Gallery() {
                                         fontFamily: "'Cormorant Garamond', serif", 
                                         color: "var(--text-color)",
                                         lineHeight: 1.6,
-                                    fontSize: { xs: "1rem", md: "1.1rem" },
+                                    fontSize: { xs: "1.3rem", md: "1.5rem" },
                                         fontStyle: "italic"
                                     }}>
                                         {item.description}
