@@ -69,7 +69,7 @@ function Footer() {
                     transition={{ duration: 0.8 }}
                 >
                     <Typography variant="h3" sx={{ 
-                        fontFamily: "'Pinyon Script', cursive", 
+                        fontFamily: "'Great Vibes', cursive",
                         fontSize: { xs: "2rem", md: "4rem" },
                         color: "var(--primary-color)",
                         mb: 2,

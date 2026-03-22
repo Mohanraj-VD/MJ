@@ -53,7 +53,7 @@ function Hero() {
                                 <span className="name-decoration" style={{ display: 'none' }}></span>
                                 <Typography variant="h1" className="hero-title" sx={{ 
                                     fontSize: { xs: "3.8rem", sm: "4.5rem", md: "5.5rem" },
-                                    fontFamily: "var(--font-script)",
+                                    fontFamily: "var(--font-accent)",
                                     color: "var(--primary-color)",
                                     m: 0,
                                     lineHeight: 1.2,
@@ -92,7 +92,7 @@ function Hero() {
                                 <span className="name-decoration" style={{ display: 'none' }}></span>
                                 <Typography variant="h1" className="hero-title" sx={{ 
                                     fontSize: { xs: "3.2rem", sm: "4.5rem", md: "5.5rem" },
-                                    fontFamily: "var(--font-script)",
+                                    fontFamily: "var(--font-accent)",
                                     color: "var(--primary-color)",
                                     m: 0,
                                     lineHeight: 1.2,

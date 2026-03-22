@@ -139,16 +139,16 @@ section {
 
 .invitation-tag {
   font-family: var(--font-accent);
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   text-transform: capitalize;
   color: var(--secondary-color);
   font-weight: 600;
   margin-bottom: 40px;
   display: inline-block;
   padding: 5px 5px;
-  border: 2px ridge rgba(100, 30, 130, 0.6);
+  border: 1px ridge rgba(100, 30, 130, 0.6);
   border-radius: 50px;
-  background: radial-gradient(circle at center, transparent 0%, rgba(120, 140, 242, 0.1) 60%, rgba(120, 140, 225, 0.1) 100%);
+  background: radial-gradient(circle at center, transparent 0%, rgba(120, 140, 242, 0.2) 90%, rgba(120, 140, 225, 0.2) 100%);
   backdrop-filter: blur(5px);
   position: relative;
 }
@@ -191,7 +191,7 @@ section {
   width: 60px;
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .hero-title {
@@ -223,7 +223,7 @@ section {
 
 .invitation-text {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--text-color);
   margin-bottom: 50px;
   max-width: 600px;
