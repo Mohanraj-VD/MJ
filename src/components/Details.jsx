@@ -60,7 +60,7 @@ function Details() {
                     >
                         <Box className="event-card" sx={{
                             height: '100%',
-                            background: "rgba(255, 255, 255, 0.9)",
+                            background: "linear-gradient(100deg,rgba(255, 180, 255, 0.6),rgba(232, 243, 236, 0.8),rgba(214, 180, 255, 0.6))",
                             backdropFilter: "blur(10px)",
                             border: "1px solid rgba(121, 163, 125, 0.2)",
                             borderRadius: "16px",
@@ -113,7 +113,12 @@ function Details() {
                     >
                         <Box className="event-card" sx={{
                             height: '100%',
-                            background: "rgba(255, 255, 255, 0.9)",
+                            background: "linear-gradient(\n" +
+                                "  100deg,\n" +
+                                "  rgba(228, 180, 163, 0.85),\n" +
+                                "  rgba(245, 230, 200, 0.9),\n" +
+                                "  rgba(228, 180, 163, 0.85)\n" +
+                                ");",
                             backdropFilter: "blur(10px)",
                             border: "1px solid rgba(121, 163, 125, 0.2)",
                             borderRadius: "16px",

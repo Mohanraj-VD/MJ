@@ -192,11 +192,13 @@ function Cover({ onOpen }) {
                 //     }}
                 // >
                     >
-                    <Typography variant="subtitle1" sx={{ 
-                        fontFamily: "'Montserrat', sans-serif", 
+                    <Typography variant="subtitle1" sx={{
+                        // fontFamily: "'Montserrat', sans-serif",
+                        fontFamily: "Pinyon Script, cursive",
                         color: "var(--secondary-color)", 
                         letterSpacing: 8,
-                        fontWeight: 800,
+                        fontSize:'40px',
+                        fontWeight: 1000,
                         display: 'block',
                         mb: 8
                     }}>
@@ -222,7 +224,7 @@ function Cover({ onOpen }) {
                         fontSize: '0.8em', 
                         color: 'var(--tertiary-color)',
                         margin: '10px 0'
-                    }}>with</span>
+                    }}>&</span>
                     <span>T. Janaki Priya</span>
                 </Typography>
 

@@ -30,7 +30,7 @@ function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    Wedding Invitation
+                    Uniting Two Hearts
                 </motion.div>
 
                 <motion.div

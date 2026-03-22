@@ -8,17 +8,17 @@
   /* --card-bg: rgba(255, 255, 255, 0.9); */
 
   /* Premium Studio Palette - Updated to Pista Green */
-  --primary-color: #3a2864;
+  --primary-color: #48357a;
   /* Deep Green */
   --secondary-color: #6f6ca0;
   /* Pista Green/Sage */
   --accent-color: #b5add8;
   /* Light Pista/Mint */
-  --text-color: #3d2d53;
+  --text-color: #463168;
   /* Very Dark Green/Almost Black */
   /* --bg-color: #d8e0e9; Off-white with a hint of green */
   --card-bg: rgba(118, 140, 176, 0.9);
-  --bg-color: radial-gradient(circle, #fdfbfb, #ebedee);
+  --bg-color: #f5f4f2;
   --tertiary-color: rgba(171, 57, 57, 0.9);
 
   /* Fonts */
@@ -27,9 +27,10 @@
   --font-body: 'Montserrat', sans-serif;
   --font-script: 'Pinyon Script', cursive;
   --font-accent: 'Great Vibes', cursive;
+  --font-Raleway: 'Raleway', sans-serif;
 }
 
-body {
+html,body {
   margin: 0;
   font-family: var(--font-body);
   background-color: var(--bg-color);
@@ -44,6 +45,18 @@ body {
 
   /* Subtle Pattern Background - Removed grid */
   background-attachment: fixed;
+  height:100%;
+  /*background:*/
+  /*        url('/src/assets/welcome-hand.svg') no-repeat right bottom,*/
+  /*        linear-gradient(135deg, #bcbcbc, #b1b8b5, #ebedee);*/
+
+  /*background-size: 250px, cover; !* SVG size, gradient full *!*/
+}
+
+body {
+  background: var(--bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Add a vignette effect for depth with green tone */
@@ -125,18 +138,17 @@ section {
 }
 
 .invitation-tag {
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  letter-spacing: 7px;
-  text-transform: uppercase;
+  font-family: var(--font-accent);
+  letter-spacing: 8px;
+  text-transform: capitalize;
   color: var(--secondary-color);
   font-weight: 600;
   margin-bottom: 40px;
   display: inline-block;
   padding: 5px 5px;
-  border: 1px ridge rgba(73, 97, 125, 0.4);
+  border: 2px ridge rgba(100, 30, 130, 0.6);
   border-radius: 50px;
-  background: radial-gradient(circle at center, transparent 0%, rgba(240, 247, 242, 0) 60%, rgba(121, 163, 125, 0.15) 100%);
+  background: radial-gradient(circle at center, transparent 0%, rgba(120, 140, 242, 0.1) 60%, rgba(120, 140, 225, 0.1) 100%);
   backdrop-filter: blur(5px);
   position: relative;
 }
@@ -359,7 +371,7 @@ section {
   }
 
   .invitation-tag {
-    font-size: 0.8rem;
+    font-size: 2rem;
     padding: 8px 15px;
     margin-bottom: 20px;
   }
@@ -453,7 +465,7 @@ section {
 }
 
 .event-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-15px);
   box-shadow: 0 15px 40px rgba(31, 38, 135, 0.1);
 }
 

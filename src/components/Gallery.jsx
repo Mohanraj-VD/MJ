@@ -70,16 +70,17 @@ function Gallery() {
                                 <Box sx={{ 
                                     p: 4, 
                                     height: '100%',
-                                    background: "#fff",
-                                    border: "1px solid var(--accent-color)",
+                                    background: "linear-gradient(135deg, #ffffff, #f6f5f3, #ebe9e6)",
+                                    border: "1px solid rgba(160, 140, 100, 0.2)",
                                     borderRadius: "8px",
                                     textAlign: "center",
                                     display: "flex",
                                     flexDirection: "column",
                                     alignItems: "center",
                                     transition: "all 0.3s ease",
+                                    boxShadow: "0 6px 20px rgba(0, 0, 0, 0.04)",
                                     "&:hover": { 
-                                        boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+                                        boxShadow: "0 8px 30px rgba(0,0,0,0.05)",
                                         borderColor: "var(--secondary-color)"
                                     }
                                 }}>

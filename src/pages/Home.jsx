@@ -30,6 +30,7 @@ function Home() {
             transition={pageTransition}
             style={{ position: "relative", overflow: "hidden" }}
         >
+
             <FloatingOrbs />
             <div className="wedding-card">
                 <Hero />
