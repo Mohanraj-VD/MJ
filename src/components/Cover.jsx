@@ -208,7 +208,7 @@ function Cover({ onOpen }) {
 
                 <Typography variant="h1" sx={{ 
                     fontFamily: "'Great Vibes', cursive", // Professional serif font instead of script
-                    color: "var(--primary-color)", 
+                    color: "var(--primary-color)",
                     fontSize: { xs: "3rem", md: "4.5rem" }, 
                     fontWeight: 600,
                     mb: 1,
@@ -249,25 +249,28 @@ function Cover({ onOpen }) {
                         onClick={onOpen}
                         variant="outlined" 
                         endIcon={<DraftsOutlinedIcon sx={{ fontSize: 20 }}/>}
-                        sx={{ 
+                        sx={{
+
                             borderColor: "rgba(255, 255, 255, 0.5)", 
-                            color: "var(--primary-color)", 
+                            color: "#F2EAE0",
                             fontFamily: "'Montserrat', sans-serif",
                             fontWeight: 600,
-                            borderRadius: "4px", 
+                            borderRadius: "50px",
                             padding: "12px 12px",
                             letterSpacing: 3,
                             textTransform: "uppercase",
                             fontSize: "0.8rem",
                             transition: "all 0s ease",
-                            background: "var(--bg-color)",
+                            background: "var(--secondary-color)",
                             backdropFilter: "blur(5px)",
                             borderWidth: "1px",
                             "&:hover": { 
                                 borderColor: "var(--primary-color)",
-                                backgroundColor: "#EBF4DD",
+                                backgroundColor: "var(--primary-color)",
+                                color:"#F2EAE0",
                                 transform: "translateY(-1px)",
-                                boxShadow: "0 10px 20px rgba(44, 74, 59, 0.15)"
+                                boxShadow: "0 10px 20px rgba(44, 74, 59, 0.15)",
+                                borderRadius:"50px"
                             }
                         }}
                     >
