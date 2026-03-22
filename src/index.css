@@ -18,7 +18,7 @@
   /* Very Dark Green/Almost Black */
   /* --bg-color: #d8e0e9; Off-white with a hint of green */
   --card-bg: rgba(118, 140, 176, 0.9);
-  --bg-color: #f5f4f2;
+  --bg-color: #efcccc;
   --tertiary-color: rgba(171, 57, 57, 0.9);
 
   /* Fonts */
@@ -139,6 +139,7 @@ section {
 
 .invitation-tag {
   font-family: var(--font-accent);
+  font-size: 3rem;
   letter-spacing: 6px;
   text-transform: capitalize;
   color: var(--secondary-color);
