@@ -50,7 +50,7 @@ function Details() {
             </motion.div>
 
             <Grid container spacing={{ xs: 6, md: 8 }} justifyContent="center" alignItems="stretch" sx={{ position: "relative", zIndex: 1, maxWidth: "1200px", mx: "auto" }}>
-                <Grid item xs={12} md={5} sx={{ display: 'flex' }}>
+                <Grid item xs={12} md={6} sx={{ display: 'flex' }}>
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -75,7 +75,7 @@ function Details() {
                         }}>
                             <Box sx={{ 
                                 width: '80px', height: '80px', 
-                                margin: '0 auto 20px', 
+                                margin: '0 auto 0px',
                                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                                 borderRadius: '50%',
                                 background: 'linear-gradient(135deg, rgba(121, 163, 125, 0.1) 0%, transparent 100%)',
@@ -100,7 +100,7 @@ function Details() {
                     </motion.div>
                 </Grid>
 
-                <Grid item xs={12} md={5} sx={{ display: 'flex' }}>
+                <Grid item xs={12} md={6} sx={{ display: 'flex' }}>
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
