@@ -70,21 +70,22 @@ function Gallery() {
                                 <Box sx={{ 
                                     p: 4, 
                                     height: '100%',
-                                    background: "linear-gradient(135deg, #ffffff, #f6f5f3, #ebe9e6)",
-                                    border: "1px solid rgba(160, 140, 100, 0.2)",
-                                    borderRadius: "8px",
-                                    textAlign: "center",
-                                    display: "flex",
-                                    flexDirection: "column",
-                                    alignItems: "center",
-                                    transition: "all 0.3s ease",
-                                    boxShadow: "0 6px 20px rgba(0, 0, 0, 0.04)",
-                                    "&:hover": { 
-                                        boxShadow: "0 8px 30px rgba(0,0,0,0.05)",
-                                        borderColor: "var(--secondary-color)"
+                                    background: 'linear-gradient(135deg, rgba(236,230,255,0.95) 0%, rgba(255,249,242,0.95) 100%)',
+                                    border: 'none',
+                                    borderRadius: '12px',
+                                    textAlign: 'center',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    transition: 'transform 0.28s ease, box-shadow 0.28s ease',
+                                    boxShadow: '0 8px 24px rgba(72,53,122,0.04)',
+                                    "&:hover": {
+                                        transform: 'translateY(-6px)',
+                                        boxShadow: '0 18px 40px rgba(72,53,122,0.08)'
                                     }
                                 }}>
                                     <Box sx={{ mb: 2 }}>
+                                        {/* ensure icon uses theme tertiary color for subtle accent */}
                                         {item.icon}
                                     </Box>
                                     <Typography variant="h5" sx={{ 

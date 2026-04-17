@@ -54,20 +54,21 @@ function Couple() {
                                         </Box>
                                     </motion.div>
                                     <Typography variant="h4" sx={{ 
-                                        fontFamily: "'Cormorant Garamond', serif", 
-                                        fontWeight: 700, 
+                                        fontFamily: "'Great Vibes', cursive",
+                                        fontWeight: 400,
                                         color: "var(--primary-color)",
-                                        fontSize: { xs: "2rem", md: "2.5rem" },
-                                        mb: 1
+                                        fontSize: { xs: "2.4rem", md: "3.6rem" },
+                                        mb: 1,
+                                        letterSpacing: 1
                                     }}>
                                         <AnimatedText text="Mohanraj" />
                                     </Typography>
                                     <Typography variant="body1" sx={{ 
                                         fontFamily: "'Cormorant Garamond', serif", 
                                         color: "var(--text-color)", 
-                                        fontSize: "1.1rem", 
+                                        fontSize: "1.15rem",
                                         fontStyle: "italic",
-                                        maxWidth: "300px",
+                                        maxWidth: "320px",
                                         mx: "auto"
                                     }}>
                                         "I have found the one whom my soul loves."
@@ -123,20 +124,21 @@ function Couple() {
                                         </Box>
                                     </motion.div>
                                     <Typography variant="h4" sx={{ 
-                                        fontFamily: "'Cormorant Garamond', serif", 
-                                        fontWeight: 700, 
+                                        fontFamily: "'Great Vibes', cursive",
+                                        fontWeight: 400,
                                         color: "var(--primary-color)",
-                                        fontSize: { xs: "2rem", md: "2.5rem" },
-                                        mb: 1
+                                        fontSize: { xs: "2.4rem", md: "3.6rem" },
+                                        mb: 1,
+                                        letterSpacing: 1
                                     }}>
                                         <AnimatedText text="Janaki Priya" />
                                     </Typography>
                                     <Typography variant="body1" sx={{ 
                                         fontFamily: "'Cormorant Garamond', serif", 
                                         color: "var(--text-color)", 
-                                        fontSize: "1.1rem", 
+                                        fontSize: "1.15rem",
                                         fontStyle: "italic",
-                                        maxWidth: "300px",
+                                        maxWidth: "320px",
                                         mx: "auto"
                                     }}>
                                         "Love is looking in the same direction."

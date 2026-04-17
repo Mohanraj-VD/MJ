@@ -5,7 +5,7 @@ import AnimatedText from "./AnimatedText";
 function Hero() {
     return (
         <Box component="section" className="hero" sx={{ 
-            pt: { xs: 12, md: 15 }, 
+            pt: { xs: 6, md: 8 },
             pb: { xs: 6, md: 8 },
             px: { xs: 0, sm: 2, md: 4 }, // Removed padding left and right completely on smallest screens
             display: "flex",

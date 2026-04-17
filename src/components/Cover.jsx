@@ -7,7 +7,7 @@ const PrayingCoupleBackground = () => (
     <motion.svg
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{ opacity: 0.15, scale: 1, y: 0 }}
-        transition={{ duration: 2, ease: "easeOut" }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
         viewBox="0 0 500 500"
         style={{
             position: 'absolute',
@@ -129,7 +129,7 @@ function Cover({ onOpen }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, y: -50, filter: "blur(10px)" }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.35 }}
             style={{
                 height: "100vh",
                 width: "100%",
@@ -162,8 +162,8 @@ function Cover({ onOpen }) {
             <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1, delay: 0.3, type: "spring", stiffness: 100 }}
-                style={{ 
+                transition={{ duration: 0.45, delay: 0.08, type: "tween" }}
+                style={{
                     textAlign: "center", 
                     zIndex: 2,
                     background: "rgba(255, 255, 255, 0.6)",
@@ -286,3 +286,4 @@ function Cover({ onOpen }) {
 }
 
 export default Cover;
+

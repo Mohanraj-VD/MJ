@@ -144,26 +144,27 @@ section {
   text-transform: capitalize;
   color: var(--secondary-color);
   font-weight: 600;
-  margin-bottom: 40px;
-  display: inline-block;
-  padding: 5px 5px;
-  border: 1px ridge rgba(100, 30, 130, 0.6);
+  margin: 2px auto 40px; /* reduced small non-zero top margin */
+  display: block;
+  /* Make tag responsive: full width with horizontal padding on small screens, fixed max width on larger screens */
+  width: calc(100% - 64px);
+  max-width: 920px;
+  padding: 12px 36px;
+  border: none; /* removed visible border as requested */
   border-radius: 50px;
-  background: radial-gradient(circle at center, transparent 0%, rgba(120, 140, 242, 0.2) 90%, rgba(120, 140, 225, 0.2) 100%);
-  backdrop-filter: blur(5px);
+  background: linear-gradient(135deg, rgba(236,230,255,0.95) 0%, rgba(255,249,242,0.95) 100%);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 24px rgba(72, 53, 122, 0.06);
   position: relative;
 }
 
 .invitation-tag::before {
   content: '';
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent, rgba(121, 163, 125, 0.1), transparent);
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent, rgba(180,165,220,0.06), transparent);
   z-index: -1;
-  border-radius: 30px;
+  border-radius: 50px;
 }
 
 .couple-container {
@@ -392,6 +393,30 @@ section {
   .hero-title {
     font-size: 2.2rem !important;
   }
+
+  .event-card {
+    padding: 10px 2px !important;
+    font-size: 0.95rem;
+    min-width: 0;
+    border-radius: 6px;
+  }
+
+  .event-card h3 {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .event-card {
+    padding: 4px 0 !important;
+    font-size: 0.85rem;
+    min-width: 0;
+    border-radius: 4px;
+  }
+
+  .event-card h3 {
+    font-size: 1rem !important;
+  }
 }
 
 /* Timer - Minimalist & Classy */
@@ -454,16 +479,21 @@ section {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.8);
-  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  /* remove explicit borders to keep cleaner look */
+  border: none;
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.07);
-  /*padding: 50px 40px;*/
   margin-left: 20px;
-  border-radius: 8px;
+  border-radius: 24px; /* fully rounded, no sharp edges */
   position: relative;
   text-align: center;
   transition: transform 0.3s ease;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+/* remove the gradient border pseudo-element previously added */
+.event-card::before {
+  display: none;
 }
 
 .event-card:hover {
@@ -683,13 +713,13 @@ footer::after {
 
 /* Floating Orbs - Mild Red Heart Glow Effect */
 .floating-orbs-container {
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* positioned relative to .wedding-card so the center orb can be placed between the two cards */
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 0;
+  z-index: 3; /* above default card z-index so the heart is visible */
   overflow: hidden;
 }
 
@@ -711,12 +741,12 @@ footer::after {
   top: 0;
   width: 15px;
   height: 24px;
-  background: rgba(200, 80, 80, 0.4);
+  background: var(--orb-color, rgba(200, 80, 80, 0.4));
   /* Mild red heart */
   border-radius: 15px 15px 0 0;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
-  filter: drop-shadow(0 0 8px rgba(200, 80, 80, 0.6));
+  filter: drop-shadow(0 0 16px var(--orb-color, rgba(200, 80, 80, 0.6)));
   /* Glowing red effect */
 }
 
@@ -832,6 +862,23 @@ footer::after {
   transform: scale(0.8);
 }
 
+/* Center orb - glowing heart */
+.orb.center {
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  animation: float-heart 10s infinite ease-in-out;
+  opacity: 0.8;
+  transform: translate(-50%, -50%);
+}
+
+.orb.center::before,
+.orb.center::after {
+  width: 30px;
+  height: 45px;
+}
+
 @keyframes float-heart {
   0% {
     transform: translateY(0) scale(1);
@@ -885,5 +932,21 @@ footer::after {
 
   footer .couple-names {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .event-card {
+    padding: 18px 8px !important;
+    margin-left: 0 !important;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .event-card {
+    padding: 28px 16px !important;
+    margin-left: 0 !important;
+    border-radius: 12px;
   }
 }

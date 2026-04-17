@@ -17,7 +17,7 @@ const pageVariants = {
 const pageTransition = {
     type: "tween",
     ease: "anticipate",
-    duration: 0.5
+    duration: 0.25
 };
 
 function Home() {
@@ -30,9 +30,9 @@ function Home() {
             transition={pageTransition}
             style={{ position: "relative", overflow: "hidden" }}
         >
-
-            <FloatingOrbs />
             <div className="wedding-card">
+                {/* Floating orbs positioned relative to wedding-card so center orb can sit between the event cards */}
+                <FloatingOrbs />
                 <Hero />
                 <Divider />
                 <Countdown />

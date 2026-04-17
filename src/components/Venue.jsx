@@ -34,17 +34,37 @@ function Venue() {
                     We can't wait to celebrate with you!
                 </Typography>
                 
-                <Typography variant="body1" sx={{
-                    fontFamily: "'Cormorant Garamond', serif",
-                    color: "var(--text-color)",
-                    mb: 6,
-                    textAlign: "center",
-                    fontSize: "1.2rem",
-                    fontWeight: 600
-                }}>
-                    Sri Vanjiamman Thirumana Mahal<br/>
-                    Mudhalipalayam Pirivu, Kangayam Rd, Tiruppur
-                </Typography>
+                {/* Mild gradient card for venue address */}
+                <Box sx={{ width: { xs: 'calc(100% - 32px)', md: 820 }, maxWidth: 820, mx: 'auto', mb: 6, px: 0 }}>
+                    <Box sx={{
+                        width: '100%',
+                        minHeight: 110,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        background: 'linear-gradient(135deg, rgba(240,232,255,0.95) 0%, rgba(255,248,240,0.95) 100%)',
+                        borderRadius: 12,
+                        p: { xs: 2.5, md: 3 },
+                        boxShadow: '0 10px 30px rgba(0,0,0,0.06)',
+                        border: '1px solid rgba(0,0,0,0.04)',
+                        textAlign: 'center',
+                        boxSizing: 'border-box',
+                        overflow: 'hidden'
+                    }}>
+                        <Typography variant="body1" sx={{
+                            fontFamily: "'Great Vibes', cursive",
+                            color: "var(--primary-color)",
+                            fontSize: { xs: '1.35rem', md: '1.9rem' },
+                            fontWeight: 400,
+                            lineHeight: 1.2,
+                            margin: 0,
+                            letterSpacing: 0.5
+                        }}>
+                            Sri Vanjiamman Thirumana Mahal<br/>
+                            Mudhalipalayam Pirivu, Kangayam Rd, Tiruppur
+                        </Typography>
+                    </Box>
+                </Box>
 
                 <motion.div
                     whileHover={{ scale: 1.02 }}
