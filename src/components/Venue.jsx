@@ -58,7 +58,8 @@ function Venue() {
                             fontWeight: 400,
                             lineHeight: 1.2,
                             margin: 0,
-                            letterSpacing: 0.5
+                            letterSpacing: 0.5,
+                            fontStyle: "italic"
                         }}>
                             Sri Vanjiamman Thirumana Mahal<br/>
                             Mudhalipalayam Pirivu, Kangayam Rd, Tiruppur
