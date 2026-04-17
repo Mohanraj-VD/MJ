@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import Heart from "./Heart";
 import { Typography, Box } from "@mui/material";
 
-// A component for floating background hearts
+// A component for floating background hearts (mild red only, reduced count)
 const FloatingBackgroundHeart = ({ size, position, duration, delay }) => (
     <motion.div
-        initial={{ opacity: 0, y: 50, scale: 0.5 }}
-        whileInView={{ opacity: [0, 0.15, 0], y: -100, scale: 1 }}
+        initial={{ opacity: 0, y: 50, scale: 0.6 }}
+        whileInView={{ opacity: [0, 0.12, 0], y: -100, scale: 1 }}
         viewport={{ once: false }}
         transition={{ 
             duration: duration, 
@@ -17,7 +17,7 @@ const FloatingBackgroundHeart = ({ size, position, duration, delay }) => (
         }}
         style={{
             position: 'absolute',
-            color: 'var(--primary-color)',
+            color: 'rgba(200,80,80,0.5)', /* mild red */
             fontSize: size,
             zIndex: 0,
             pointerEvents: 'none',
@@ -43,13 +43,10 @@ function Footer() {
             boxShadow: 'none'
         }}>
             
-            {/* Floating Background Hearts */}
-            <FloatingBackgroundHeart size="2rem" position={{ left: "10%", bottom: "20%" }} duration={6} delay={0} />
-            <FloatingBackgroundHeart size="3rem" position={{ left: "25%", bottom: "10%" }} duration={8} delay={1} />
-            <FloatingBackgroundHeart size="1.5rem" position={{ left: "40%", bottom: "30%" }} duration={5} delay={2.5} />
-            <FloatingBackgroundHeart size="2.5rem" position={{ right: "30%", bottom: "15%" }} duration={7} delay={0.5} />
-            <FloatingBackgroundHeart size="4rem" position={{ right: "15%", bottom: "5%" }} duration={9} delay={1.5} />
-            <FloatingBackgroundHeart size="1.8rem" position={{ right: "5%", bottom: "25%" }} duration={6.5} delay={3} />
+            {/* Floating Background Hearts (reduced and mild red only) */}
+            <FloatingBackgroundHeart size="2rem" position={{ left: "12%", bottom: "22%" }} duration={6} delay={0} />
+            <FloatingBackgroundHeart size="3rem" position={{ left: "28%", bottom: "12%" }} duration={8} delay={1} />
+            <FloatingBackgroundHeart size="1.5rem" position={{ right: "22%", bottom: "18%" }} duration={5} delay={2.5} />
 
             <Box sx={{ 
                 position: 'relative', 

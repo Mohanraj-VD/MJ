@@ -12,7 +12,7 @@ function Venue() {
                 transition={{ duration: 0.8 }}
             >
                 <Typography variant="h2" sx={{ 
-                    fontFamily: "'Pinyon Script', cursive", 
+                    fontFamily: "'Montserrat', sans-serif",
                     color: "var(--primary-color)", 
                     fontSize: { xs: "3rem", md: "4.5rem" }, 
                     mb: 2,

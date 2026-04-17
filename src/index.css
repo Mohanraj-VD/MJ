@@ -152,9 +152,11 @@ section {
   padding: 12px 36px;
   border: none; /* removed visible border as requested */
   border-radius: 50px;
-  background: linear-gradient(135deg, rgba(236,230,255,0.95) 0%, rgba(255,249,242,0.95) 100%);
+  /* Slightly darker pastel gradient (soft rose → warm cream) */
+  background: linear-gradient(135deg, #ffd7dd 0%, #ffeecd 100%);
   backdrop-filter: blur(6px);
-  box-shadow: 0 8px 24px rgba(72, 53, 122, 0.06);
+  /* Slightly stronger but still soft shadow for better contrast */
+  box-shadow: 0 8px 22px rgba(200, 120, 130, 0.06);
   position: relative;
 }
 
@@ -162,7 +164,8 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(45deg, transparent, rgba(180,165,220,0.06), transparent);
+  /* Slightly more visible pastel sheen to match darker base */
+  background: linear-gradient(45deg, transparent, rgba(255,200,210,0.07), transparent);
   z-index: -1;
   border-radius: 50px;
 }
@@ -588,16 +591,9 @@ footer {
   top: 50%;
   width: 60px;
   height: 1px;
-  background: var(--accent-color);
-  opacity: 0.4;
-}
-
-.couple-names::before {
-  left: -80px;
-}
-
-.couple-names::after {
-  right: -80px;
+  /* Slightly deeper pastel for uniting-heart decoration */
+  background: linear-gradient(90deg, rgba(255,170,180,0.95), rgba(255,230,200,0.95));
+  opacity: 0.85;
 }
 
 .footer-message {
@@ -613,7 +609,8 @@ footer {
 .footer-divider {
   width: 100px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  /* Slightly deeper pastel footer divider */
+  background: linear-gradient(90deg, transparent, rgba(255,170,180,0.95), transparent);
   margin: 30px auto;
   opacity: 0.4;
 }

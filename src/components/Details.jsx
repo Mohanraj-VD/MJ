@@ -92,7 +92,7 @@ function Details() {
                                 </Typography>
                                 <Box sx={{ width: '30px', height: '2px', bgcolor: 'var(--primary-color)', opacity: 0.2, mx: 'auto', my: 2 }} />
                                 <Typography sx={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.9rem", color: "#666", mb: 3, textTransform: "uppercase", letterSpacing: 2 }}>
-                                    6:00 PM Onwards
+                                    5:00 PM Onwards
                                 </Typography>
                                 <Typography sx={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", color: "var(--text-color)", fontStyle: "italic", lineHeight: 1.6 }}>
                                     Join us for an evening of warmth, laughter, and a delightful feast as we celebrate our new beginning together with family and friends.
