@@ -27,7 +27,7 @@ function Hero() {
                 <motion.div
                     className="invitation-tag"
                     initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={{ opacity: 2, y: 0 }}
                     transition={{ duration: 1 }}
                 >
                     Uniting Two Hearts
