@@ -12,7 +12,7 @@ function Venue() {
                 transition={{ duration: 0.8 }}
             >
                 <Typography variant="h2" sx={{ 
-                    fontFamily: "'Montserrat', sans-serif",
+                    fontFamily: "'Pinyon Script', cursive",
                     color: "var(--primary-color)", 
                     fontSize: { xs: "3rem", md: "4.5rem" }, 
                     mb: 2,
@@ -52,7 +52,7 @@ function Venue() {
                         overflow: 'hidden'
                     }}>
                         <Typography variant="body1" sx={{
-                            fontFamily: "'Great Vibes', cursive",
+                            fontFamily: "'Cormorant Garamond', serif",
                             color: "var(--primary-color)",
                             fontSize: { xs: '1.35rem', md: '1.9rem' },
                             fontWeight: 400,
