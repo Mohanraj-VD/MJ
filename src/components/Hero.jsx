@@ -111,13 +111,13 @@ function Hero() {
                                 letterSpacing: { xs: 0.5, sm: 2 },
                                 fontSize: { xs: "0.75rem", sm: "0.9rem" },
                                 fontStyle: "italic",
-                                opacity: 0.8,
+                                opacity: 0.9,
                                 textAlign: 'center',
                                 maxWidth: '100%',
                                 px: 1,
                                 mx: "auto"
                             }}>
-                                Daughter of Mr. G. Thiruselvam & Mrs. T. Subbulakshmi
+                                Daughter of Mr. G. Thiruchelvam & Mrs. T. Subbu lakshmi
                             </Typography>
                         </Box>
                     </Box>
